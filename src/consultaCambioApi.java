@@ -33,7 +33,7 @@ public class consultaCambioApi {
     }
 
     public tipoDeCambios buscaCambio() {
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/91c90242a7b1a7a696740d07/pair/"+monedaUno+"/"+monedaDos+"/"+monto);
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/*ponerAPI*/pair/"+monedaUno+"/"+monedaDos+"/"+monto);
         System.out.println(direccion);
 
         HttpClient client = HttpClient.newHttpClient();
